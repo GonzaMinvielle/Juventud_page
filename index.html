@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.S y D.J</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+
+
+<body>
+
+    <header class="mid-page">
+        <nav class="nav-pc">
+            <img src="src/logo.jpg.png" alt="">
+            <div class="menu">
+                <a href="index.html" class="contactos">Home</a>
+                <a href="section/noticias.html" class="noticiasB">Noticias</a>
+                <a href="section/tablaP.html">Tabla de posiciones</a>
+            </div>
+            <button class="btn-menu" id="btn-menu"><img src="../src/btn-menu.png" alt=""></button>
+        </nav>
+
+        <h1> Bienvenidos al Sitio Oficial <br> C.S. y D. Juventud</h1>
+
+    </header>
+    <nav class="none" id="nav">
+        <a href="index.html" class="Home">Home</a>
+        <a href="section/noticias.html" class="noticiasB">Noticias</a>
+        <a href="section/tablaP.html">Tabla de posiciones</a>
+
+    </nav>
+
+    <article class="form-container">
+        <h3>¡SUMATE AL EQUIPO! </h3>
+        <h4>Dejanos tus datos ↓</h4>
+        <section class="datos">
+            <form class="form" id="form" name="form">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre.." required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Tu apellido.." required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" placeholder="Tu edad.." required>
+
+                <label for="posicion">Posición:</label required>
+                <input type="text" name="posicion" id="posicion" placeholder="Tu posicion.." required>
+
+                <div class="buttons">
+                    <button id="btnAgregar">
+                        <p>Agregar jugador</p>
+                    </button>
+                    <button id="btnAgregarx3">
+                        <p>Agregar jugador x3</p>
+                    </button>
+                    <button id="btnEliminar">
+                        <p>Eliminar todo</p>
+                    </button>
+                </div>
+                <p class="error" id="error"></p>
+
+            </form>
+
+        </section>
+
+    </article>
+    <article class="tabla-dinamica">
+        <div class="title-table-jugadores">
+            <h2>JUGADORES NUEVOS</h2>
+        </div>
+        <table class="jugadores-nuevos">
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Posicion</th>
+
+            </thead>
+            <tbody id="jugadores-nuevos">
+
+            </tbody>
+        </table>
+    </article>
+
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
